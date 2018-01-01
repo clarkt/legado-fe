@@ -6,9 +6,14 @@ import Frontpage from '@/components/Frontpage';
 Vue.use(Router);
 
 export default new Router({
+  options: [
+    {
+      linkActiveClass: 'testing',
+    },
+  ],
   routes: [
     {
-      path: 'helloworld',
+      path: '/helloworld',
       name: 'HelloWorld',
       component: HelloWorld,
     },
