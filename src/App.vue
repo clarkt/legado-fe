@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <router-link to="/">Frontpage</router-link>
-    <router-link to="/helloworld">Helloworld</router-link>
-    <section class="section">
-        <div class="container">
-          <h1 class="title">
-            Hello World
-          </h1>
-          <p class="subtitle">
-            My first website with <strong>Bulma</strong>!
-          </p>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          </a>
+          <button class="button navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-      </section>
+
+        <div class="navbar-start">
+          <router-link to="/" class="navbar-item">Frontpage</router-link>
+          <router-link to="/helloworld" class="navbar-item">Helloworld</router-link>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">
+            Login
+          </a>
+        </div>
+      </div>
+    </nav>
     <router-view/>
   </div>
 </template>
