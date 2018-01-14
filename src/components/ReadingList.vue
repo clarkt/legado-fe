@@ -2,10 +2,10 @@
   <section class="section">
     <div class="container">
       <h1 class="title">
-        Hello World
+        {{ title }}
       </h1>
       <p class="subtitle">
-        Welcome to  <strong>{{ appName }}</strong>!
+        {{ msg }}
       </p>
     </div>
   </section>
@@ -13,10 +13,11 @@
 
 <script>
 export default {
-  name: 'Frontpage',
+  name: 'ReadingList',
   data() {
     return {
-      appName: 'Legado',
+      title: 'Reading list',
+      msg: 'This is the reading list',
     };
   },
 };

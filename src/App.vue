@@ -15,6 +15,7 @@
 
         <div class="navbar-start">
           <router-link to="/" class="navbar-item">Frontpage</router-link>
+          <router-link to="/readinglist" class="navbar-item">Reading list</router-link>
           <router-link to="/helloworld" class="navbar-item">Helloworld</router-link>
         </div>
 
@@ -32,5 +33,10 @@
 <script>
 export default {
   name: 'app',
+  data() {
+    return {
+      appName: 'Legado',
+    };
+  },
 };
 </script>
